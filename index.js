@@ -8,7 +8,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' }); // Carpeta temporal para los audios
 
 // ¡IMPORTANTE! Reemplaza esto con tu clave de OpenAI
-const OPENAI_API_KEY = 'sk-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';
+const OPENAI_API_KEY = 'sk-';
 
 app.post('/transcribe', upload.single('file'), async (req, res) => {
   if (!req.file) {
